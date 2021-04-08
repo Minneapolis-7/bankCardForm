@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <form class="card-form" action="/">
+        <div id="card-type" class="card-form__card-type"></div>
+        <div class="card-form__row">
+            <label for="card-number" class="card-form__label">Card number</label>
+            <input id="card-number" placeholder="XXXX XXXX XXXX XXXX" class="card-form__input card-form__input--full-width" type="text" />
+        </div>
+        <div class="flex-row">
+            <div class="card-form__row card-form__number-row--card-holder">
+                <label for="card-holder" class="card-form__label">Card holder</label>
+                <input id="card-holder" placeholder="IVAN IVANOV" class="card-form__input card-form__input--width-200" type="text" />
+            </div>
+            <div class="card-form__row">
+                <label for="expire-date" class="card-form__label">Expire date</label>
+                <input id="expire-date" value="2017-06-01" placeholder="XXXX XXXX XXXX XXXX" class="card-form__input card-form__input--width-150" type="date" />
+            </div>
+        </div>
+        <div class="cvv-block">
+            <label for="cvv" class="card-form__label">CVV (Security code)</label>
+            <input id="cvv" placeholder="XXX" class="card-form__input card-form__input--full-width" type="number" />
+        </div>
+    </form>
+
+    <script src="./main.js"></script>
+</body>
+</html>
